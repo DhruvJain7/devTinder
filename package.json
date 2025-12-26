@@ -1,0 +1,27 @@
+{
+  "name": "devtinder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DhruvJain7/devTinder.git"
+  },
+  "keywords": [
+    "nodejs",
+    "javascript"
+  ],
+  "author": "Dhruv Jain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DhruvJain7/devTinder/issues"
+  },
+  "homepage": "https://github.com/DhruvJain7/devTinder#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
