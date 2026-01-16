@@ -51,7 +51,7 @@ userRouter.get("/user/connections", userAuth, async (req, res) => {
     res.status(400).send("Error:" + err.message);
   }
 });
-
+// Get the feed
 userRouter.get("/feed", userAuth, async (req, res) => {
   try {
     const loggedInUser = req.user;
