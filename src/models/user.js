@@ -53,7 +53,7 @@ const userSchema = new mongoose.Schema(
     photoUrl: {
       type: String,
       default:
-        "https://imgs.search.brave.com/5N9V5z_xtV5dV5vgueyvkXtFcKJEZvPOD2pHUH0cH8Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNzMv/MjU3LzY5Ny9zbWFs/bC91bnJlY29nbml6/YWJsZS1tYW4tdXNl/ci1waG90by1hdmF0/YXItdmVjdG9yLmpw/Zw",
+        "https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp",
       validate(value) {
         if (!validator.isURL(value)) {
           throw new Error("Invalid URL" + value);
