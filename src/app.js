@@ -3,23 +3,12 @@ const app = express();
 const { connectDb } = require("./config/database");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
-// app.use(
-//   cors({
-//     origin: "http://localhost:5173",
-//     credentials: true,
-//     methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
-//     optionsSuccessStatus: 204,
-//   }),
-//);
+
 app.use(
   cors({
     origin: "http://localhost:5173",
 
-    // methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
     credentials: true,
-    //   optionsSuccessStatus: 200,
-    //   allowedHeaders: ["Content-Type", "Authorization"], // Some browsers choke on 204
-    // }),
   }),
 );
 
