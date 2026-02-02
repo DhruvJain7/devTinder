@@ -45,7 +45,7 @@ const userSchema = new mongoose.Schema(
     gender: {
       type: String,
       enum: {
-        values: ["male", "female", "others"],
+        values: ["male", "female", "others", "Male", "Female", "Others", ""],
         message: `{Value} is not a valid gender type`,
       },
     },
@@ -53,7 +53,7 @@ const userSchema = new mongoose.Schema(
     photoUrl: {
       type: String,
       default:
-        "https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp",
+        "https://imgs.search.brave.com/x8jah8UjhG41izgdyJ4ZHffs-1p4QtG-Mf9fPg_kIQw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/aWNvbnM4LmNvbS9u/b2xhbi8xMjAwL3Vz/ZXItZGVmYXVsdC5q/cGc",
       validate(value) {
         if (!validator.isURL(value)) {
           throw new Error("Invalid URL" + value);
